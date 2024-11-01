@@ -25,10 +25,10 @@ function App() {
   ]
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundImage: 'linear-gradient(1deg, #86c8d4, #7cc7a9, #7dc8a7)', position: 'relative', flexDirection: 'column', gap: '10px', minHeight: '100vh' }}>
-      <div style={{ width: '300px', height: '300px', position: 'absolute', top: '-60px' }}>
+      <div style={{ width: '300px', height: '150px', paddingTop: '20px' }}>
         <img style={{ width: '100%', height: '100%' }} src={img} alt='' />
       </div>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: '20px', width: '100%', marginTop: '170px', zIndex: '10' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', gap: '20px', width: '100%', marginTop: '10px' }}>
         {data.map((item, index) => {
           return (
             <Stack sx={{ width: { xs: '90%', sm: '70%', md: '60%' } }} key={index}>
@@ -38,16 +38,15 @@ function App() {
                 }  {item.text}
               </a>
             </Stack>
-
           )
         })}
       </div>
-      <Stack sx={{ flexDirection: 'row', gap: 2 }}>
+      <Stack sx={{ flexDirection: 'row', gap: 2, width: { xs: '90%', sm: '70%', md: '60%' }, justifyContent: 'space-between' }}>
         <IconButton>
-          <FacebookOutlined color='primary' sx={{ width: '100px', height: '100px' }} />
+          <FacebookOutlined color='primary' sx={{ width: '80px', height: '80px' }} />
         </IconButton>
         <IconButton>
-          <Instagram color='secondary' sx={{ width: '100px', height: '100px' }} />
+          <Instagram color='secondary' sx={{ width: '80px', height: '80px' }} />
         </IconButton>
       </Stack>
     </div>
