@@ -24,7 +24,7 @@ function App() {
     }
   ]
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundImage: 'linear-gradient(1deg, #86c8d4, #7cc7a9, #7dc8a7)', position: 'relative', flexDirection: 'column', gap: '10px', minHeight: '100vh' }}>
+    <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', backgroundImage: 'linear-gradient(1deg, #86c8d4, #7cc7a9, #7dc8a7)', position: 'relative', flexDirection: 'column', gap: '10px', minHeight: '100vh' }}>
       <div style={{ width: '300px', height: '150px', paddingTop: '20px' }}>
         <img style={{ width: '100%', height: '100%' }} src={img} alt='' />
       </div>
